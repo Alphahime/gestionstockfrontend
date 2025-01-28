@@ -1,7 +1,7 @@
 import React from 'react';
+
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-
 // Importez tous les composants nécessaires
 import CategoriesList from './components/categories/CategoriesList';
 import CategoryForm from './components/categories/CategoryForm';
@@ -67,19 +67,18 @@ import BilansList from './components/bilans/BilansList';
 import BilanForm from './components/bilans/BilanForm';
 import BilanDetail from './components/bilans/BilanDetail';
 
-import Navbar from './components/shared/Navbar';
-import Footer from './components/shared/Footer';
 
-import Home from './components/home/Home'; 
+
+import Home from './components/home/Home';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar /> {/* Barre de navigation */}
+        
         <Routes>
 
-         <Route path="/acceuil" element={<Home />} /> 
+         <Route path="/home" element={<Home />} /> 
 
 
           {/* Routes pour les catégories */}
@@ -178,7 +177,7 @@ function App() {
           <Route path="/bilans/:id" element={<BilanDetail />} />
           <Route path="/bilans/:id/edit" element={<BilanForm />} />
         </Routes>
-        <Footer /> {/* Pied de page */}
+     
       </div>
     </Router>
   );

@@ -1,0 +1,62 @@
+/* Topbar.css */
+
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .topbar-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+  .topbar-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .topbar-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #333333;
+  }
+  
+  .topbar-icon:hover {
+    color: #1976d2;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border:1px solid  #1976d2;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .search-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #1976d2;
+    font-size: 1rem;
+  }
+  
+  .search-button:hover {
+    color: #145a8a;
+  }

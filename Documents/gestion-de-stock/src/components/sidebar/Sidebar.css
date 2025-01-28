@@ -1,0 +1,96 @@
+/* Sidebar.css */
+
+/* Conteneur principal de la sidebar */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Largeur par défaut */
+    background-color: #ffffff; /* Fond blanc */
+    color: #333333; /* Texte sombre pour contraster avec le fond blanc */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Ombre plus douce */
+    transition: width 0.3s ease; /* Animation de transition pour la largeur */
+    overflow: hidden;
+  }
+  
+  /* Style lorsque la sidebar est réduite */
+  .sidebar-container.collapsed {
+    width: 60px; /* Largeur réduite */
+  }
+  
+  /* En-tête de la sidebar */
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #e3f2fd; /* Bleu clair pour l'en-tête */
+    border-bottom: 1px solid #bbdefb; /* Bordure bleue plus claire */
+    cursor: pointer; /* Indique que l'en-tête est cliquable */
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: #1976d2; /* Texte bleu pour l'en-tête */
+  }
+  
+  /* Navigation de la sidebar */
+  .sidebar-nav {
+    padding: 20px 0;
+  }
+  
+  .sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-nav ul li:hover {
+    background-color: #e3f2fd; /* Bleu clair au survol */
+  }
+  
+  /* Style pour les icônes */
+  .sidebar-icon {
+    font-size: 1.2rem;
+    margin-right: 15px; /* Plus d'espace entre l'icône et le texte */
+    min-width: 20px; /* Garde les icônes alignées */
+    color: #1976d2; /* Couleur bleue pour les icônes */
+  }
+  
+  /* Style pour le texte des éléments */
+  .sidebar-item span {
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    color: #333333; /* Texte sombre */
+  }
+  
+  /* Style lorsque la sidebar est réduite (masquer le texte) */
+  .sidebar-container.collapsed .sidebar-item span {
+    display: none;
+  }
+  
+  /* Style pour le défilement */
+  .sidebar-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .sidebar-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fond clair pour la piste de défilement */
+  }
+  
+  .sidebar-container::-webkit-scrollbar-thumb {
+    background: #bbdefb; /* Bleu clair pour la poignée de défilement */
+    border-radius: 4px; /* Bordure arrondie de la poignée */
+  }
+  
+  .sidebar-container::-webkit-scrollbar-thumb:hover {
+    background: #90caf9; /* Bleu plus clair au survol */
+  }

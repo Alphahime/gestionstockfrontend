@@ -1,11 +1,17 @@
 import React from 'react';
+import Sidebar from '../sidebar/Sidebar'; 
+import Topbar from '../topbar/Topbar'; 
 import './Home.css';
-
+import Statistique from '../statistique/Statistique';
 const Home = () => {
   return (
     <div className="home-container">
-      <h1>Bienvenue sur la page d'accueil</h1>
-      <p>Ceci est un exemple de contenu pour la page d'accueil.</p>
+      <Sidebar /> 
+      <Topbar /> 
+      <div className="content">
+      
+        <Statistique /> 
+      </div>
     </div>
   );
 };
